@@ -199,7 +199,6 @@ a {
   min-width: 169px;
   border: none;
   border-radius: 4px;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
@@ -487,6 +486,7 @@ a {
   letter-spacing: 0.04em;
   padding: 12px 24px;
   height: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -498,12 +498,19 @@ a {
 .portfolio-card {
   padding-bottom: 120px;
 }
+.portfolio-card > .container {
+  padding-left: 0;
+  padding-right: 0;
+}
 .card-list {
   flex-wrap: wrap;
-  gap: 48px 22px;
+  gap: 48px 24px;
 }
-.card-item:hover {
+.card-item {
   border: 1px solid var(--color-cloud);
+}
+.card-item:hover,
+.card-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
