@@ -105,9 +105,7 @@ a {
 .header-list {
   gap: 40px;
 }
-.current {
-  color: var(--color-ocean);
-}
+
 .header-item {
 }
 .header-link {
@@ -119,6 +117,9 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   padding-bottom: 28px;
+}
+.current {
+  color: var(--color-ocean);
 }
 .header-link.current::after {
   content: "";
@@ -185,6 +186,8 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   padding-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto;
 }
 .button {
   background-color: var(--color-iris);
@@ -245,6 +248,7 @@ a {
   color: #000000;
   margin-bottom: 8px;
   border-radius: 4px;
+  border: 1px solid transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -301,6 +305,7 @@ a {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 .paragraf-center {
   color: var(--color-slate);
@@ -361,14 +366,11 @@ a {
   border: 1px solid currentColor;
   border-radius: 4px;
   color: #8e8f99;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  border: 1px solid currentColor;
-  border-radius: 4px;
   color: var(--color-ocean);
 }
 
@@ -376,7 +378,7 @@ a {
   width: 104px;
   height: 100%;
   fill: currentColor;
-  color: var(--color-light-slate);
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon:hover,
 .customers-icon:focus {
@@ -486,14 +488,15 @@ a {
   letter-spacing: 0.04em;
   padding: 12px 24px;
   height: 48px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--color-ocean);
   color: var(--color-width);
-  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*-----------portfolio-card----*/
 .portfolio-card {
@@ -508,12 +511,15 @@ a {
   gap: 48px 24px;
 }
 .card-item {
-  border: 1px solid var(--color-cloud);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-item:hover,
 .card-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-overlay {
