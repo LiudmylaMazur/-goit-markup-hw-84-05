@@ -576,4 +576,9 @@ a {
 .button-close {
   display: block;
   margin-left: auto;
+  border-radius: 50%;
+  background: var(--color-corn-flower);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 24px;
+  width: 24px;
 }
