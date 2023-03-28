@@ -59,7 +59,7 @@
           <h1 class="caption-one">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <section class="section-first section">
@@ -420,9 +420,9 @@
         </section>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button-close">X</button>
+        <button type="button" data-modal-close class="button-close" ><svg class="close-icon" width="8" height="8"><use href="image/icons.svg#icon-close"></use></svg></a></button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
